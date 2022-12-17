@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>com.test.servlet.Test</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Accueil</servlet-name>
+  	<display-name>Accueil</display-name>
+  	<description></description>
+  	<servlet-class>com.test.servlet.Accueil</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Test</servlet-name>
   	<url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Accueil</servlet-name>
+  	<url-pattern>/</url-pattern>
   </servlet-mapping>
 </web-app>

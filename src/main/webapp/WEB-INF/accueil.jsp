@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Test</title>
+<title>Bienvenue sur mon site</title>
 </head>
 <body>
 <%@ include file="menu.jsp" %>
-<p>Bonjour a tous </p>
+<p>Bienvenue sur ma page d'accueil de mon site</p>
 </body>
 </html>
