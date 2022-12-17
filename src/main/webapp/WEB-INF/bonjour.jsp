@@ -7,6 +7,17 @@
 <title>Test</title>
 </head>
 <body>
-<p>Bonjour a vous tous</p>
+  <% String heure = (String) request.getAttribute("heure");
+     if (heure.equals("jour")){
+    	 out.println("Bonjour");
+     }else{
+    	 out.println("Bonsoir");
+     }
+  %>
+ <p> 
+ <% for (int i = 0 ; i < 20; i++){
+	 out.println("Une nouvelle ligne" + i + "<br>");
+ } %>
+ </p>
 </body>
 </html>
