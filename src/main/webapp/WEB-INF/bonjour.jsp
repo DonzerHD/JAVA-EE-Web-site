@@ -7,6 +7,6 @@
 <title>Test</title>
 </head>
 <body>
-<p>Bonjour</p>
+<p>Bonjour a vous tous</p>
 </body>
 </html>
