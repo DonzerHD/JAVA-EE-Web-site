@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.test.beans.Auteur;
+
 
 public class Test extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -19,9 +21,12 @@ public class Test extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	   String name = request.getParameter("name");
-	   request.setAttribute("name", name);
-       this.getServletContext().getRequestDispatcher("/WEB-INF/bonjour.jsp").forward(request, response);
+        Auteur auteur = new Auteur();
+        auteur.setPrenom("Michel");
+        auteur.setNom("Crapaud");
+        auteur.setActif(false);
+        request.setAttribute("auteur", auteur);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/bonjour.jsp").forward(request, response);
        
 	 }
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
